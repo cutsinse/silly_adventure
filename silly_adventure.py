@@ -1,7 +1,7 @@
 #Exercise 31B:  Make your own game!
 
-def die():
-    print("Aaaaaaaaaand, you're dead.")
+def die(why):
+    print(why, "Aaaaaaaaaand, you're dead.")
 
 def troll():
     print("Well if you don't want to play I'll just close the game.")
@@ -54,8 +54,7 @@ if "1" in path:
         3: Grab a sword""")
         Green_Fairy = input(">")
         if "1" in Green_Fairy:
-            print("The fairy smacks the rock away and stabs you with the spear.")
-            die()
+            die("The fairy smacks the rock away and stabs you with the spear.")
         elif "2" in Green_Fairy:
             print("The fairy tries to stab you but you smack the spear away and run back into the forest.")
             survive()
@@ -80,9 +79,8 @@ if "1" in path:
             print("""The fairy calls out like a bell, and you hear a tiny chime from up above you.\nA tiny, baby fairy flys down, gives you a blue saphire and goes into the house with its parent.""")
             print("Congratulations, you won a  blue saphire!")
         elif "3" in Green_Fairy:
-            print("""The apple explodes into a black, toxic dust as it hits a tree.
+            die("""The apple explodes into a black, toxic dust as it hits a tree.
             The dust has a life of its own, it's coming right at you!!!""")
-            die()
         else:
             troll()
 
@@ -126,8 +124,7 @@ elif "2" in path:
             print("Your blood drips onto the ground.  The ground beneith you gives way and you fall into a pit!")
             print("On the wall you see a sign that reads:")
             print('"Only wizards and foolish adventurers fall for that one.  Either way, the world is better off without them"')
-            print("The ground above you tumbles down....")
-            die()
+            die("The ground above you tumbles down.....")
         elif "2" in dagger:
             print("You now have a worn looking dagger, very useful for your next adventure!")
             next()
@@ -213,8 +210,7 @@ elif "3" in path:
         3: Look around""")
         ruby = input(">")
         if "1" in ruby:
-            print("You pick up the shining jewel, and as soon as it is out of the water it bursts into flames!")
-            die()
+            die("You pick up the shining jewel, and as soon as it is out of the water it bursts into flames!")
         elif "2" in ruby:
             print("You know better then to mess with strange jewels, so you turn around to go.  Behind you, you see a salamander.")
             print("The salamander hops on your shoulder and rides with you all the way home.")
