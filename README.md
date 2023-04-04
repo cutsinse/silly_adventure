@@ -1,2 +1,2 @@
 # silly_adventure
-coding my own "choose your own adventure" game!
+coding a very simple "choose your own adventure" game using if statements
